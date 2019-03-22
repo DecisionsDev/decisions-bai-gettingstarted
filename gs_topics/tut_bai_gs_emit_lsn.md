@@ -1,4 +1,4 @@
-# Task 3: Running the ruleset (draft)
+# Task 3: Running the ruleset
 
 You use the HTDS service protocol and JSON format to run the ruleset in the Rule Execution Server console.
 

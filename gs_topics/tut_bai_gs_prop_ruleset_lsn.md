@@ -1,4 +1,4 @@
-# Task 2: Enabling Business Automation Insights properties for a ruleset (draft)
+# Task 2: Enabling Business Automation Insights properties for a ruleset
 
 You use the Decision Center Business console to deploy a ruleset in a RuleApp from the Miniloan Service decision service to Rule Execution Server (see [Getting started with decision services](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.samples/smp_console_topics/tpc_smpserver_starting.html)). Then, you use the Rule Execution Server console to set properties that enable events to be emitted from the ruleset to Business Automation Insights. 
 
@@ -14,8 +14,8 @@ Deployment configurations](https://www.ibm.com/support/knowledgecenter/SSQP76_8.
 
 You deploy a RuleApp from the Miniloan Service decision service to Rule Execution Server.
 
-1.   Start the sample application server.
-2.   Log in to the Business console by using *odmAdmin* as the user name and password  (see [
+1.   Start the sample server (see [Starting and stopping the sample server](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.samples/smp_console_topics/tpc_smpserver_starting.html)).
+2.   Open the Business console at **http://localhost:9090/decisioncenter**, and log in by using *odmAdmin* as the user name and password  (see [
 Opening Decision Center on the sample server](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dcenter.samples/shared_dcsample_topics/tpc_starting_rts_sample_server.html)). 
 3.   In the Library tab, open the main branch of the Miniloan Service decision service.
 4.   Open the Deployments tab.
@@ -31,7 +31,10 @@ Integrating with IBM Business Automation Insights](https://www.ibm.com/support/k
 
 1.   Log in to Rule Execution Server by using *odmAdmin* as the user name and password. 
 2.   In the Explorer tab, open mydeployment/Miniloan_ServiceRuleset.  
-3.   Click **Show Decision Warehouse options** to open the the options. 
+3.   Click **Show Decision Warehouse options** to open the the options:
+
+![Image shows the Decision Warehouse settings.](../gs_images/scrn_dwset.jpg)
+
 4.   Click **Edit** and deselect **Enable tracing in Decision Warehouse**.
 5.   Click **Save**. You see that the tracing is disabled.
 

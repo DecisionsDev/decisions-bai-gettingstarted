@@ -1,8 +1,8 @@
-# Getting started with IBM Business Automation Insights in IBM Operational Decision Manager (draft)
+# Getting started with IBM Business Automation Insights for decisions
 
 ## Audience
 
-This tutorial is for technical and business users who want to configure Operational Decision Manager to use the ODM event emitter for Business Automation Insights. 
+This tutorial is for technical and business users who want to configure Operational Decision Manager, the decisioning capibility of IBM Digital Business Automation, to emit decision events for Business Automation Insights. 
 
 ## Time required
 

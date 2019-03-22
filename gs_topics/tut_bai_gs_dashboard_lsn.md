@@ -1,4 +1,4 @@
-# Task 4: Looking at the predefined dashboard (draft)
+# Task 4: Looking at the predefined dashboard
 
 You look at events displayed in the Decisions dashboard.
 

@@ -1,4 +1,4 @@
-# Task 5: Making a custom dashboard (draft)
+# Task 5: Making a custom dashboard
 
 You create a custom dashboard to display the input and output data from the Miniloan Service ruleset. 
 
@@ -127,11 +127,11 @@ You create a new chart to show the number of requested loans grouped by amount a
 8.   Click **amount** in the Field to select **data.mydeployment.Miniloan_ServiceRuleset.in.loan.amount**. 
 9.   Set the Minimum interval to 5000. Adapt it according to the other events that you sent.
 10.  Enter **Loan amount** in the custom label. 
-11.  Click the **Apply Changes** button to display your widget. 
-12.  Click **Add sub-buckets**.
-13.  Click **Split Series** and select **Terms** under Aggregation.
-14.  Click **approved** in the Field to select **data.mydeployment.Miniloan_ServiceRuleset.out.loan.approved**.
-15.  Enter **Loan approval** in the custom label.
+11.  Click **Add sub-buckets**.
+12.  Click **Split Series** and select **Terms** under Aggregation.
+13.  Click **approved** in the Field to select **data.mydeployment.Miniloan_ServiceRuleset.out.loan.approved**.
+14.  Enter **Loan approval** in the custom label.
+15.  Click the **Apply Changes** button to display your widget. 
 16.  Hover over the bar chart to see the detailed value.
 17.  Click **Save** to save the new widget.
 18.  Enter **My Amount** as the title, and click **Confirm Save**. Now the widget can be used in your dashboard.
