@@ -1,0 +1,84 @@
+[
+  {
+    "_id": "45ab3d50-3e8a-11e9-a9c1-a363d5a80ffd",
+    "_type": "dashboard",
+    "_source": {
+      "title": "My Decisions Dashboard",
+      "hits": 0,
+      "description": "Getting Started tutorial with Decisions and BAI dashboard ",
+      "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":6,\"i\":\"1\"},\"id\":\"457445f0-1b37-11e9-b613-2590bc78bfaf\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":21,\"w\":48,\"h\":11,\"i\":\"2\"},\"id\":\"1b8f3bb0-1b31-11e9-b613-2590bc78bfaf\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false,\"colors\":{\"false\":\"#EF843C\",\"true\":\"#629E51\"}}},\"gridData\":{\"x\":0,\"y\":6,\"w\":48,\"h\":15,\"i\":\"7\"},\"id\":\"7d1c5190-4950-11e9-a9c1-a363d5a80ffd\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":25,\"y\":0,\"w\":23,\"h\":6,\"i\":\"8\"},\"id\":\"df5bd6a0-4950-11e9-a9c1-a363d5a80ffd\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.5.3\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":12,\"y\":0,\"w\":13,\"h\":6,\"i\":\"9\"},\"id\":\"51a96ca0-4950-11e9-a9c1-a363d5a80ffd\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.5.3\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"Miniloan\",\"disabled\":false,\"index\":\"dba-odm-timeseries-timestamp\",\"key\":\"rulesetPath\",\"negate\":false,\"params\":{\"query\":\"/mydeployment/1.0/Miniloan_ServiceRuleset/1.0\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"/mydeployment/1.0/Miniloan_ServiceRuleset/1.0\"},\"query\":{\"match\":{\"rulesetPath\":{\"query\":\"/mydeployment/1.0/Miniloan_ServiceRuleset/1.0\",\"type\":\"phrase\"}}}}]}"
+      }
+    }
+  },
+  {
+    "_id": "0df8c7d0-4950-11e9-a9c1-a363d5a80ffd",
+    "_type": "search",
+    "_source": {
+      "title": "My Decisions Search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "data.mydeployment.Miniloan_ServiceRuleset.out.loan.amount",
+        "data.mydeployment.Miniloan_ServiceRuleset.out.loan.approved"
+      ],
+      "sort": [
+        "timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"dba-odm-timeseries-timestamp\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"dba-odm-timeseries-timestamp\",\"negate\":false,\"disabled\":false,\"alias\":\"My Decisions Search\",\"type\":\"phrase\",\"key\":\"rulesetPath\",\"value\":\"/mydeployment/1.0/Miniloan_ServiceRuleset/1.0\",\"params\":{\"query\":\"/mydeployment/1.0/Miniloan_ServiceRuleset/1.0\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"rulesetPath\":{\"query\":\"/mydeployment/1.0/Miniloan_ServiceRuleset/1.0\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  },
+  {
+    "_id": "51a96ca0-4950-11e9-a9c1-a363d5a80ffd",
+    "_type": "visualization",
+    "_source": {
+      "title": "My Decisions - Approval Status",
+      "visState": "{\"title\":\"My Decisions - Approval Status\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"data.mydeployment.Miniloan_ServiceRuleset.out.loan.approved\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Loan approved\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"true\":\"#629E51\",\"false\":\"#EF843C\"}}}",
+      "description": "",
+      "savedSearchId": "0df8c7d0-4950-11e9-a9c1-a363d5a80ffd",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "7d1c5190-4950-11e9-a9c1-a363d5a80ffd",
+    "_type": "visualization",
+    "_source": {
+      "title": "My Decisions - Amount",
+      "visState": "{\"title\":\"My Decisions - Amount\",\"type\":\"histogram\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"histogram\",\"mode\":\"stacked\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"data.mydeployment.Miniloan_ServiceRuleset.out.loan.amount\",\"interval\":5000,\"extended_bounds\":{},\"customLabel\":\"Amount ($)\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"data.mydeployment.Miniloan_ServiceRuleset.out.loan.approved\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Loan approved\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"colors\":{\"false\":\"#EF843C\",\"true\":\"#629E51\"}}}",
+      "description": "",
+      "savedSearchId": "0df8c7d0-4950-11e9-a9c1-a363d5a80ffd",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  },
+  {
+    "_id": "df5bd6a0-4950-11e9-a9c1-a363d5a80ffd",
+    "_type": "visualization",
+    "_source": {
+      "title": "My Decisions - Messages",
+      "visState": "{\"title\":\"My Decisions - Messages\",\"type\":\"tagcloud\",\"params\":{\"scale\":\"linear\",\"orientation\":\"single\",\"minFontSize\":10,\"maxFontSize\":20,\"showLabel\":true},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"data.mydeployment.Miniloan_ServiceRuleset.out.loan.messages.keyword\",\"size\":20,\"order\":\"desc\",\"orderBy\":\"1\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"customLabel\":\"Execution messages\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "savedSearchId": "0df8c7d0-4950-11e9-a9c1-a363d5a80ffd",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  }
+]
