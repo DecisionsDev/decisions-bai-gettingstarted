@@ -15,7 +15,7 @@ You do the following work in this task:
 **Optional:** If you do not want to create the custom dashboard, you can import it from this GitHub repository:
 
 1.   In the main Kibana menu, click **Management > Saved Objects**. 
-2.   Click **Import** and browse to *GettingStartedDir*/MyDecisionDashboard.json.
+2.   Click **Import** and browse to *GettingStartedDir*/MyDecisionsDashboard.json.
 3.   Click the **Import** button to complete the import of the dashboard. 
 4.   In the main Kibana menu, click Dashboard.
 5.   In the dashboard list, click My Decisions Dashboard. You can also enter "My" in the search field to find the imported dashboard.

@@ -31,7 +31,7 @@ b.   Delete the Operational Decision Manager profile, for example, LibertyInstal
 
 ![Image shows applications in Operational Decision Manager.](../gs_images/scrn_odmapps.jpg)
 
-You have reconfigure DecisionService.war in this step. 
+You reconfigure DecisionService.war in step 3. 
 
 5.   Stop the sample server.
 
@@ -39,9 +39,9 @@ You have reconfigure DecisionService.war in this step.
 
 You define the connection to your Business Automation Insights instance. The settings are defined in the property file *config.properties*, which you must complete with the values that correspond to your Business Automation Insights installation (see [Configuring the ODM event emitter](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.config/topics/con_config_bai.html)). 
 
-1.   Open *GettingStartedDir*/data/config.properties.
+1.   Open *GettingStartedInstall*/data/config.properties.
 
-**Note:** If security is enabled on your Business Automation Insights installation, you must edit the property file in *GettingStartedDir*/data/configWithSecurity. You set the property values shown in substep 2 and for the security settings (see [Securing ODM emitter communications to Kafka](https://www.ibm.com/support/knowledgecenter/SSYHZ8_18.0.x/com.ibm.dba.bai/topics/tsk_bai_security_comm_top_odm_emitter_to_kafka.html)).
+**Note:** If security is enabled on your Business Automation Insights installation, you must edit the property file in *GettingStartedInstall*/data/configWithSecurity.properties. You set the property values shown in substep 2 and for the security settings (see [Securing ODM emitter communications to Kafka](https://www.ibm.com/support/knowledgecenter/SSYHZ8_18.0.x/com.ibm.dba.bai/topics/tsk_bai_security_comm_top_odm_emitter_to_kafka.html)).
 
 2.   Enter the following values:
 

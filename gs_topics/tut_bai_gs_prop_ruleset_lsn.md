@@ -15,7 +15,7 @@ Deployment configurations](https://www.ibm.com/support/knowledgecenter/SSQP76_8.
 You deploy a RuleApp from the Miniloan Service decision service to Rule Execution Server.
 
 1.   Start the sample server (see [Starting and stopping the sample server](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.samples/smp_console_topics/tpc_smpserver_starting.html)).
-2.   Open the Business console at **http://localhost:9090/decisioncenter**, and log in by using *odmAdmin* as the user name and password  (see [
+2.   Log in to the Business console by using the URL [http://localhost:9090/decisioncenter](http://localhost:9090/decisioncenter), and *odmAdmin* as the user name and password (see [
 Opening Decision Center on the sample server](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dcenter.samples/shared_dcsample_topics/tpc_starting_rts_sample_server.html)). 
 3.   In the Library tab, open the main branch of the Miniloan Service decision service.
 4.   Open the Deployments tab.
@@ -29,7 +29,7 @@ Opening Decision Center on the sample server](https://www.ibm.com/support/knowle
 The ruleset in the deployed RuleApp has Decision Warehouse tracing enabled because the ruleset is also used in another tutorial. You must disable the tracing because it is not compatible with Business Automation Insights (see [
 Integrating with IBM Business Automation Insights](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.overview/topics/con_bai.html)).
 
-1.   Log in to Rule Execution Server by using *odmAdmin* as the user name and password. 
+1.   Log in to Rule Execution Server by using the URL [http://localhost:9090/res](http://localhost:9090/res), and *odmAdmin* as the user name and password. 
 2.   In the Explorer tab, open mydeployment/Miniloan_ServiceRuleset.  
 3.   Click **Show Decision Warehouse options** to open the the options:
 
