@@ -18,6 +18,22 @@ You deploy a RuleApp from the Miniloan Service decision service to Rule Executio
 2.   Log in to the Business console by using the URL [http://localhost:9090/decisioncenter](http://localhost:9090/decisioncenter), and *odmAdmin* as the user name and password (see [
 Opening Decision Center on the sample server](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.dcenter.samples/shared_dcsample_topics/tpc_starting_rts_sample_server.html)). 
 3.   In the Library tab, open the main branch of the Miniloan Service decision service.
+
+_____________________________________________________________________________________
+
+**Note:** If you are not working with an on-premises instance of Operational Decision Manager, you might have to import the decision service into the Business console:
+
+   a.   In the Library tab, click the **Import Decision Service** button:
+     
+   ![Image shows the import button.](../gs_images/scrn_import.jpg)
+     
+
+   b.   In the Import Decision Service window, click **Choose** and navigate to *GettingStartedInstall/miniloan.zip*.
+
+   c.   Click **Import** to import the decision service.
+
+_____________________________________________________________________________________
+
 4.   Open the Deployments tab.
 5.   Click the Miniloan deployment configuration.
 6.   Click **Deploy** in the upper right corner of the window. A dialog box opens with a summary of the deployment configuration. 

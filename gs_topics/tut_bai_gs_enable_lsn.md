@@ -2,13 +2,22 @@
 
 You configure the sample server to use the Business Automation Insights plug-in.
 
+_____________________________________________________________________________________
+
+**Note:** This task explains how to enable the ODM emitter for ruleset runs. It can be followed with the on-premises version of Operational Decision Manager. For installation and parameters on other types of services:
+
+-    Operational Decision Manager on IBM Cloud Private, see [Configuring the ODM event emitter](https://www.ibm.com/support/knowledgecenter/en/SSQP76_8.10.x/com.ibm.odm.icp/topics/tsk_custom_emitters.html)
+-    Operational Decision Manager on IBM Digital Business Automation for Multicloud, see [Installing automation containers from the user interface](https://www.ibm.com/support/knowledgecenter/en/SSYHZ8_18.0.x/com.ibm.dba.install/topics/tsk_install_ui.html) 
+
+_____________________________________________________________________________________
+
 You do the following work in this task:
 -   Create a sample server profile.
 -   Define the Business Automation Insights configuration properties.
 -   Configure the DecisionService web application.
 -   Start the sample server.
 
-**Important:** In this tutorial, you use the default configuration for the Business Automation Insights plug-in. The plug-in can try numerous times to connect to Kafka. This can reduce performance, and should be taken into consideration when moving to production (see [Moving to production](https://www.ibm.com/support/knowledgecenter/SSYHZ8_18.0.x/com.ibm.dba.bai/topics/tsk_bai_moving_to_prod.html)).
+**Important:** In this tutorial, you use the default configuration for the Business Automation Insights plug-in. The plug-in can try to connect to Kafka numerous times. This can reduce performance, and should be taken into consideration when moving to production (see [Moving to production](https://www.ibm.com/support/knowledgecenter/SSYHZ8_18.0.x/com.ibm.dba.bai/topics/tsk_bai_moving_to_prod.html)).
 
 ## Step 1: Creating the sample server profile
 You create a profile for the sample server. To get more information about the following commands, see [Starting and stopping the sample server](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.samples/smp_console_topics/tpc_smpserver_starting.html).
