@@ -2,7 +2,7 @@
 
 ## Audience
 
-This tutorial is for technical and business users who want to configure Operational Decision Manager, the decisioning capibility of IBM Digital Business Automation, to emit decision events for Business Automation Insights. 
+This tutorial is for technical and business users who want to configure Operational Decision Manager, the decisioning capability of IBM Digital Business Automation, to emit decision events for Business Automation Insights. 
 
 ## Time required
 
@@ -37,12 +37,12 @@ For more information, visit the following resources:
 
 ## Prerequisites
 You must do the following tasks before you can work on the tutorial:
--   Install WebSphere Application Server Liberty 18.0.0.4. An image of the server, **WLP**, is included as a complementary application server in the Operational Decision Manager installation files. Locate the file in your downloaded images, and decompress it in a separate directory on your computer. In the tutorial, the Liberty directory is referred to as *LibertyInstall*.
--   Install Operational Decision Manager 8.10.1 (see [Installing Operational Decision Manager](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.install/topics/odm_distrib_install.html)). Keep the options for samples and tutorials when you do the installation. In the tutorial, the installation directory is referred to as *ODMInstall*.
+-   Install Operational Decision Manager 8.10.1 or later (see [Installing Operational Decision Manager](https://www.ibm.com/support/knowledgecenter/SSQP76_8.10.x/com.ibm.odm.distrib.install/topics/odm_distrib_install.html)). Keep the options for samples and tutorials when you do the installation. In the tutorial, the installation directory is referred to as *ODMInstall*.
+-   Install the version of WebSphere Application Server Liberty that is included in the Operational Decision Manager installation files. Locate the file **WLP** in your downloaded images, and decompress it in a separate directory on your computer. You must install Liberty before you install Operational Decision Manager. In the tutorial, the Liberty directory is referred to as *LibertyInstall*.
 
 **Note:** [Task 1: Enabling the Business Automation Insights plug-in](gs_topics/tut_bai_gs_enable_lsn.md) explains how to configure the ODM event emitter for an on-premises installation of Operational Decision Manager. This configuration is slightly different from Operational Decision Manager in Digital Business Automation for Multicloud. Additional information is provided in task 1.
 
--   Install Business Automation Insights 18.0.2. See [Getting started with IBM Business Automation Insights](https://www.ibm.com/support/knowledgecenter/SSYHZ8_18.0.x/com.ibm.dba.bai/topics/tut_getting_started.html) to install Business Automation Insights and IBM Cloud Private, and [Installing IBM Business Automation Insights on Certified Kubernetes](https://github.com/dbamc/cert-kubernetes/tree/master/BAI ) for installation instructions for other Certified Kubernetes platforms in the [Certified Kubernetes Conformance Program](https://landscape.cncf.io/category=platform). You need to note the following information for the tutorial:
+-   Install Business Automation Insights 18.0.2 or later. See [Getting started with IBM Business Automation Insights](https://www.ibm.com/support/knowledgecenter/SSYHZ8_18.0.x/com.ibm.dba.bai/topics/tut_getting_started.html) to install Business Automation Insights and IBM Cloud Private, and [Installing IBM Business Automation Insights on Certified Kubernetes](https://github.com/dbamc/cert-kubernetes/tree/master/BAI ) for installation instructions for other Certified Kubernetes platforms in the [Certified Kubernetes Conformance Program](https://landscape.cncf.io/category=platform). You need to note the following information for the tutorial:
 
     -   The Kafka bootstrap server
     -   The Ingress topic name

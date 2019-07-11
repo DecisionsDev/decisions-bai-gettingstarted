@@ -63,7 +63,7 @@ You add properties to the ruleset to enable the emission of events to Business A
 3.   Change the value of the property to **true** and click **Add**. 
 4.   Do the same for the predefined properties **bai.emitter.input** and **bai.emitter.output** to get the input and output values.
 
-![Image shows emitter settings.](../gs_images/scrn_baiemtter.jpg)
+![Image shows emitter settings.](../gs_images/scrn_baiemtter2.jpg)
 
 **Next**
 

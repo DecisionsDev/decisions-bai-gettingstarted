@@ -10,7 +10,7 @@ You do the following work in this task:
 -   Add generic widgets and define them for your data.
 -   Organize the elements in your dashboard.
 
-**Note:** In this task, you add "My" to the names of the custom dashboard and widgets. Other users might already be using these names. To distinquish your elements from those of other users, prefix the names of your elements with your initials, for example, John Doe uses JDMy.
+**Note:** In this task, you add "My" to the names of the custom dashboard and widgets. Other users might already be using these names. To distinquish your elements from those of other users, prefix the names of your elements with your initials, for example, John Doe uses JD.
 
 **Optional:** If you do not want to create the custom dashboard, you can import it from this GitHub repository:
 
@@ -85,10 +85,14 @@ enter */mydeployment/1.0/Miniloan_ServiceRuleset/1.0* as the Value.
 
 ![Image shows JSON list.](../gs_images/scrn_searchJSON.jpg)
 
-8.   In the Field list, look for **data.mydeployment.Miniloan_ServiceRuleset.out.loan.approved** and Add it. The value of the approval is shown in the table. 
-9.   Do the same for **data.mydeployment.Miniloan_ServiceRuleset.out.loan.amount**.
-This search is used by the custom widgets to filter the data that they display.
-9.   Save your changes to My Decisions Search.
+8.   In the Field list on the left, click the wheel button next to Available fields, and enter "approved" as the field name:
+
+![Image shows filter.](../gs_images/scrn_filter.jpg)
+
+Hover over the value *data.mydeployment.Miniloan_ServiceRuleset.out.loan.approved*, and then click the **Add** button. The value of the approval is shown in the table.
+
+9.   Do the same for **data.mydeployment.Miniloan_ServiceRuleset.out.loan.amount** by entering "amount" as the field name.
+10.  Save your changes to My Decisions Search.
 
 ## Step 4: Creating a custom pie chart
 

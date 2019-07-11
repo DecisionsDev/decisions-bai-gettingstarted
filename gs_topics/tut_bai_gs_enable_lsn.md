@@ -50,7 +50,7 @@ You define the connection to your Business Automation Insights instance. The set
 
 1.   Open *GettingStartedInstall*/data/config.properties.
 
-**Note:** If security is enabled on your Business Automation Insights installation, you must edit the property file in *GettingStartedInstall*/data/configWithSecurity.properties. You set the property values shown in substep 2 and for the security settings (see [Securing ODM emitter communications to Kafka](https://www.ibm.com/support/knowledgecenter/SSYHZ8_18.0.x/com.ibm.dba.bai/topics/tsk_bai_security_comm_top_odm_emitter_to_kafka.html)).
+**Note:** If security is enabled on your Business Automation Insights installation, you must edit the property file in *GettingStartedInstall*/data/configWithSecurity.properties. You set the property values shown in substep 2 and for the security settings (see [Securing ODM emitter communications to Kafka](https://www.ibm.com/support/knowledgecenter/SSYHZ8_18.0.x/com.ibm.dba.bai/topics/tsk_bai_security_comm_top_odm_emitter_to_kafka.html)). In Windows, give the full path to a key file by using the slash or doubling the backslash to avoid the skipping mechanism.
 
 2.   Enter the following values:
 
@@ -68,7 +68,7 @@ You use the **res-setup** command (see [Enabling the emitter with Ant](https://w
 2.   Use the following command in a terminal with the appropriate values for the paths to Liberty and the GettingStartedInstall directory:
 
     cd <ODMInstall>/executionserver/bin
-    ant -f ressetup.xml -Dbai.war.in=../applicationservers/WLP/DecisionService.war -Dbai.war.out=<LibertyInstall>/usr/servers/odm81010/apps/DecisionService.war
+    ant -f ressetup.xml -Dbai.war.in=../applicationservers/WLP/DecisionService.war -Dbai.war.out=<LibertyInstall>/usr/servers/<profileName>/apps/DecisionService.war
     -Dbai.enable=true -Dbai.properties=<GettingStartedInstall>/data/config.properties setup-bai
 
 **Note:** If security is enabled on your Business Automation Insights installation, use the property file *GettingStartedInstall*/data/configWithSecurity.properties.
